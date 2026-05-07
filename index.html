@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Ofoq — An integrated smart school platform connecting students, teachers, parents, and administrators. Built at the University of Bahrain."/>
+<title>Ofoq | Smart School Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo-wrap">
+    <div class="nav-logo-icon">أ</div>
+    <span class="nav-logo-text">Ofoq</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#problem">Vision</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#demo">Demo</a></li>
+    <li><a href="#stats">Results</a></li>
+    <li><a href="#contact" class="cta">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-orb2"></div>
+  <div class="hero-inner">
+    <div class="hero-badge reveal d1">
+      <span class="dot"></span>
+      Senior Project · ITCS 498 · University of Bahrain · 2025–2026
+    </div>
+
+    <h1 class="reveal d2">
+      One Platform.<br>
+      <span class="highlight">Every Learner</span><br>
+      Connected.
+    </h1>
+
+    <p class="lead reveal d3">
+      Ofoq is an integrated smart school ecosystem built for students, teachers, parents, and administrators — bringing academic management, real-time communication, AI-powered tools, and gamified learning into a single platform aligned with <strong style="color:#93c5fd">SDG 4: Quality Education</strong>.
+    </p>
+
+    <div class="hero-btns reveal d4">
+      <a href="#features" class="btn-primary">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        Explore Features
+      </a>
+      <a href="#stats" class="btn-outline">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        Survey Insights
+      </a>
+    </div>
+
+    <div class="hero-stats reveal d5">
+      <div>
+        <div class="hstat-num">145<span>+</span></div>
+        <div class="hstat-label">Survey Responses</div>
+      </div>
+      <div>
+        <div class="hstat-num">4<span></span></div>
+        <div class="hstat-label">User Roles Served</div>
+      </div>
+      <div>
+        <div class="hstat-num">20<span>+</span></div>
+        <div class="hstat-label">Core Features</div>
+      </div>
+      <div>
+        <div class="hstat-num">SDG<span>4</span></div>
+        <div class="hstat-label">UN Aligned</div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-down">
+    SCROLL
+    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+  </a>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about" class="section" style="background:#fff;">
+  <div class="wrap">
+    <div class="section-eyebrow reveal">The Project</div>
+    <h2 class="section-title reveal d1">A Complete School Digital Ecosystem</h2>
+    <div class="about-grid">
+      <div class="about-text reveal-left d2">
+        <div class="sdg-badge">
+          🌍 Aligned with UN Sustainable Development Goal 4
+        </div>
+        <p>
+          Existing school platforms in Bahrain — like ManageBac and EduNet — suffer from cluttered interfaces, poor communication channels, and technical bottlenecks that frustrate students, teachers, and parents alike.
+        </p>
+        <p>
+          <strong>Ofoq</strong> was designed ground-up to solve these gaps: a multi-role platform offering real-time academic tracking, direct messaging, AI-powered tutoring, gamification, and a centralized e-library — all in one clean, fast, accessible app.
+        </p>
+        <p>
+          Built with an Agile methodology over two semesters, Ofoq's design was shaped by a 145-response survey across all user groups — ensuring every feature maps to a real need.
+        </p>
+      </div>
+      <div class="about-visual reveal-right d2">
+        <div class="av-pill">
+          <div class="av-dot" style="background:#3b82f6;"></div>
+          <span class="av-pill-text">📚 Multi-role access: Student · Teacher · Parent · Admin</span>
+        </div>
+        <div class="av-pill">
+          <div class="av-dot" style="background:#2dd4bf;"></div>
+          <span class="av-pill-text">🤖 AI-powered tutoring, quizzes & leaderboards</span>
+        </div>
+        <div class="av-pill">
+          <div class="av-dot" style="background:#f59e0b;"></div>
+          <span class="av-pill-text">📊 Real-time grade & attendance tracking</span>
+        </div>
+        <div class="av-pill">
+          <div class="av-dot" style="background:#e11d48;"></div>
+          <span class="av-pill-text">🔔 Push notifications & announcements system</span>
+        </div>
+        <div class="av-pill">
+          <div class="av-dot" style="background:#8b5cf6;"></div>
+          <span class="av-pill-text">📖 Centralized E-Library with teacher uploads</span>
+        </div>
+        <div class="av-pill">
+          <div class="av-dot" style="background:#10b981;"></div>
+          <span class="av-pill-text">🎮 Gamified learning to boost engagement</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TEAM ══ -->
+<section id="team" class="section dark-section">
+  <div class="wrap">
+    <div class="section-eyebrow reveal">The Builders</div>
+    <h2 class="section-title reveal d1">Meet the Team</h2>
+    <p class="section-desc reveal d2">Computer Science seniors at the University of Bahrain's College of Information Technology.</p>
+
+    <div class="team-grid">
+      <div class="team-card reveal d2">
+        <div class="team-avatar">MH</div>
+        <div class="team-name">Muntadher Hadi</div>
+        <div class="team-id">20198780</div>
+        <div class="team-role">Full-Stack Development</div>
+        <div class="team-desc">Led the system architecture and backend API design, with a focus on user authentication and data security across all four roles.</div>
+      </div>
+      <div class="team-card reveal d3">
+        <div class="team-avatar">ZM</div>
+        <div class="team-name">Zahraa Mirza</div>
+        <div class="team-id">202209543</div>
+        <div class="team-role">UI/UX & Frontend</div>
+        <div class="team-desc">Designed and implemented Ofoq's interface system — crafting clean, consistent experiences for students, teachers, parents, and admins.</div>
+      </div>
+      <div class="team-card reveal d4">
+        <div class="team-avatar">ZS</div>
+        <div class="team-name">Zainab Sami</div>
+        <div class="team-id">202210349</div>
+        <div class="team-role">AI & Feature Engineering</div>
+        <div class="team-desc">Built the AI tutoring and quiz generation modules, and developed the gamification system including the student leaderboard and point mechanics.</div>
+      </div>
+    </div>
+
+    <div class="supervisor-strip reveal d5">
+      <div class="sup-avatar">TS</div>
+      <div>
+        <div class="sup-label">Project Supervisor</div>
+        <div class="sup-name">Dr. Taher Saleh</div>
+        <div class="sup-dept">Department of Computer Science · College of Information Technology · University of Bahrain</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROBLEM / SOLUTION ══ -->
+<section id="problem" class="section" style="background:#fff;">
+  <div class="wrap">
+    <div class="section-eyebrow reveal">The Vision</div>
+    <h2 class="section-title reveal d1">Bridging a Real Educational Gap</h2>
+    <p class="section-desc reveal d2">School platforms in Bahrain are either too complex or too limited. Ofoq was designed to close that gap.</p>
+
+    <div class="ps-grid">
+      <div class="ps-card challenge reveal-left d2">
+        <div class="ps-icon">⚠️</div>
+        <h3>The Challenge</h3>
+        <ul class="ps-list">
+          <li><span class="check">✕</span>Inconsistent or delayed communication between schools, parents, and students</li>
+          <li><span class="check">✕</span>Parents have no real-time visibility into grades, attendance, or homework deadlines</li>
+          <li><span class="check">✕</span>Platforms like EduNet suffer technical bottlenecks during exam weeks, causing widespread frustration</li>
+          <li><span class="check">✕</span>ManageBac is IB-focused, cluttered, and impractical for general Bahraini school use</li>
+          <li><span class="check">✕</span>Students have limited access to learning resources and lack AI tools to supplement studying</li>
+          <li><span class="check">✕</span>No single platform covers communication, academics, and engagement together</li>
+        </ul>
+      </div>
+      <div class="ps-card solution reveal-right d2">
+        <div class="ps-icon">✅</div>
+        <h3>Our Solution</h3>
+        <ul class="ps-list">
+          <li><span class="check">✓</span>Unified dashboard for all roles — students, teachers, parents, and administrators — in one app</li>
+          <li><span class="check">✓</span>Parents can view child grades, attendance, exam schedule, and message teachers directly</li>
+          <li><span class="check">✓</span>Real-time push notifications for deadlines, announcements, and important updates</li>
+          <li><span class="check">✓</span>AI-powered chatbot and auto-generated quizzes to personalize the learning experience</li>
+          <li><span class="check">✓</span>Gamification with points, AI games, and leaderboards to drive sustained student engagement</li>
+          <li><span class="check">✓</span>Validated by a 145-response multi-group survey aligned with SDG 4: Quality Education</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURES / ROLES ══ -->
+<section id="features" class="section">
+  <div class="wrap">
+    <div class="section-eyebrow reveal">Core Features</div>
+    <h2 class="section-title reveal d1">Built for Every Role</h2>
+    <p class="section-desc reveal d2">Ofoq delivers a tailored experience for each stakeholder — with distinct dashboards, tools, and permissions matched to real user needs discovered through primary research.</p>
+
+    <div class="features-grid">
+
+      <!-- STUDENT -->
+      <div class="feat-card fc-student reveal d2">
+        <div class="feat-num">01</div>
+        <div class="feat-icon-wrap">🎓</div>
+        <h3>Students</h3>
+        <div class="feat-sub">Learning · Engagement · Progress</div>
+        <p>
+          Ofoq gives students a personalized academic hub where everything they need — from homework and quizzes to grades and timetables — lives in one place. An AI chatbot answers academic questions on demand, while AI-generated quizzes and gamified challenges turn studying into an active, rewarding experience. A 145-response survey confirmed that <strong>87% of students</strong> want in-app teacher communication, <strong>95%</strong> need timely notifications, and the majority want an AI-powered learning companion.
+        </p>
+        <ul class="feat-bullets">
+          <li>View timetable, exam schedule, and calendar</li>
+          <li>Submit and track homework assignments</li>
+          <li>Take AI-generated quizzes and receive instant feedback</li>
+          <li>Use the AI chatbot to get notes, summaries, and study help</li>
+          <li>Play AI-powered educational games and climb the leaderboard</li>
+          <li>Access the E-library and all uploaded learning materials</li>
+          <li>View grades and track academic performance</li>
+          <li>Receive push notifications for deadlines and announcements</li>
+        </ul>
+        <span class="feat-badge bg-blue">Survey: 145 responses validated</span>
+      </div>
+
+      <!-- TEACHER -->
+      <div class="feat-card fc-teacher reveal d3">
+        <div class="feat-num">02</div>
+        <div class="feat-icon-wrap">🧑‍🏫</div>
+        <h3>Teachers</h3>
+        <div class="feat-sub">Management · Assessment · Communication</div>
+        <p>
+          Teachers on Ofoq gain a complete classroom management toolkit — replacing scattered spreadsheets and messaging apps with a unified workflow. From creating AI-assisted quizzes and uploading resources to marking attendance and analyzing student performance, every task is streamlined. Survey data showed <strong>100% of teachers</strong> want an intuitive, time-saving app, and the majority highlighted automated notifications and easy assignment tracking as top priorities.
+        </p>
+        <ul class="feat-bullets">
+          <li>Create and manage quizzes with AI-powered question generation</li>
+          <li>Mark attendance and view class attendance history</li>
+          <li>Assign, track, and grade student homework</li>
+          <li>View student performance reports and progress analytics</li>
+          <li>Post announcements and send direct messages to students/parents</li>
+          <li>Upload files and resources to the shared E-library</li>
+          <li>Manage groups and organize class communication</li>
+          <li>View AI leaderboard and track gamification engagement</li>
+        </ul>
+        <span class="feat-badge bg-teal">AI-assisted quiz creation included</span>
+      </div>
+
+      <!-- PARENT -->
+      <div class="feat-card fc-parent reveal d2">
+        <div class="feat-num">03</div>
+        <div class="feat-icon-wrap">👨‍👩‍👧</div>
+        <h3>Parents</h3>
+        <div class="feat-sub">Visibility · Communication · Support</div>
+        <p>
+          Parents no longer have to wait for report cards or call the school for updates. Ofoq gives them a direct window into their child's academic life — from live attendance records and grade progress to exam schedules and assignment deadlines. Direct messaging with teachers breaks down communication barriers. Survey data showed <strong>89% of parents</strong> want a platform that saves time and improves school-home communication, with the majority citing attendance visibility and grade tracking as essential.
+        </p>
+        <ul class="feat-bullets">
+          <li>View all children's academic profiles in one dashboard</li>
+          <li>Monitor attendance records and absence history</li>
+          <li>Track grades, performance trends, and academic progress</li>
+          <li>Contact teachers directly via in-app messaging</li>
+          <li>View child's timetable and exam schedule</li>
+          <li>Access homework deadlines to support studying at home</li>
+          <li>Receive official school announcements and notifications</li>
+        </ul>
+        <span class="feat-badge bg-amber">Real-time visibility for families</span>
+      </div>
+
+      <!-- ADMIN -->
+      <div class="feat-card fc-admin reveal d3">
+        <div class="feat-num">04</div>
+        <div class="feat-icon-wrap">⚙️</div>
+        <h3>Administrators</h3>
+        <div class="feat-sub">Management · Control · Oversight</div>
+        <p>
+          Administrators have full control over the school's digital operations — managing users, assigning roles, organizing subjects and classes, and broadcasting institution-wide announcements. The admin dashboard provides a bird's-eye view of the entire platform, enabling fast onboarding of new students and teachers while keeping the system running smoothly. The persona scenario features Mr. Ahmed managing teacher assignments and student registration without leaving the platform.
+        </p>
+        <ul class="feat-bullets">
+          <li>Add, edit, and manage student and teacher accounts</li>
+          <li>Assign teachers to subjects and schedule classes and exams</li>
+          <li>Manage duties, roles, and administrative responsibilities</li>
+          <li>Oversee and curate the school's E-library content</li>
+          <li>Broadcast announcements to all users or selected groups</li>
+          <li>Access and edit personal profile and security settings</li>
+        </ul>
+        <span class="feat-badge bg-rose">Full platform administration control</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ APP DEMO ══ -->
+<section id="demo" class="section dark-section">
+  <div class="wrap">
+    <div class="demo-header">
+      <div class="section-eyebrow reveal">App Preview</div>
+      <h2 class="section-title reveal d1">See Ofoq in Action</h2>
+      <p class="section-desc reveal d2">A role-based experience tailored for every user — clean, fast, and accessible on any device.</p>
+    </div>
+
+    <div class="demo-tabs reveal d3">
+      <button class="demo-tab active" onclick="switchTab('student',this)">🎓 Student</button>
+      <button class="demo-tab" onclick="switchTab('teacher',this)">🧑‍🏫 Teacher</button>
+      <button class="demo-tab" onclick="switchTab('parent',this)">👨‍👩‍👧 Parent</button>
+      <button class="demo-tab" onclick="switchTab('admin',this)">⚙️ Admin</button>
+    </div>
+
+    <!-- STUDENT -->
+    <div class="demo-panel active reveal d4" id="panel-student">
+      <div class="demo-panel-inner">
+        <div class="demo-info">
+          <h3>Student Dashboard</h3>
+          <p>Sara logs in to see her personalized dashboard — upcoming homework, quiz results, AI study tools, and her leaderboard position all at a glance.</p>
+          <ul class="demo-feats">
+            <li><span class="df-dot"></span>Today's schedule and upcoming tasks</li>
+            <li><span class="df-dot"></span>Submit &amp; track homework assignments</li>
+            <li><span class="df-dot" style="background:var(--teal)"></span>AI-powered quiz generation &amp; tutoring</li>
+            <li><span class="df-dot" style="background:var(--teal)"></span>Grades and performance overview</li>
+            <li><span class="df-dot" style="background:var(--amber)"></span>Leaderboard &amp; gamification points</li>
+            <li><span class="df-dot" style="background:var(--amber)"></span>E-library and learning materials</li>
+          </ul>
+          <div style="margin-top:1.5rem;padding:.9rem 1.2rem;background:rgba(29,111,243,.1);border:1px solid rgba(29,111,243,.25);border-radius:10px;font-size:.82rem;color:#7fb3ff;">
+            💡 <em>"The app should load quickly and function reliably"</em> — 99% of students agreed in the survey
+          </div>
+        </div>
+        <div class="demo-screens">
+          <div class="demo-phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="ph-header"><div class="ph-avatar" style="background:var(--sky);"></div><div class="ph-htext"><div class="ph-t1"></div><div class="ph-t2"></div></div></div>
+              <div style="display:flex;gap:.3rem;margin:.2rem 0;">
+                <div class="ph-stat" style="flex:1"><div class="ph-num">A+</div><div class="ph-sub"></div></div>
+                <div class="ph-stat" style="flex:1;background:rgba(34,197,94,.15);"><div class="ph-num" style="color:var(--teal);">95%</div><div class="ph-sub"></div></div>
+                <div class="ph-stat" style="flex:1;background:rgba(249,115,22,.12);"><div class="ph-num" style="color:var(--amber);">#3</div><div class="ph-sub"></div></div>
+              </div>
+              <div class="ph-card"><div class="ph-card-row"><div class="ph-bar" style="width:75%;background:var(--sky);"></div></div><div class="ph-label" style="width:90%;"></div></div>
+              <div class="ph-card"><div class="ph-card-row"><div class="ph-bar" style="width:55%;background:var(--teal);"></div></div><div class="ph-label" style="width:70%;"></div></div>
+              <div class="ph-grid">
+                <div class="ph-grid-item"><div class="ph-icon" style="background:rgba(29,111,243,.3);"></div><div class="ph-gt"></div><div class="ph-gs"></div></div>
+                <div class="ph-grid-item"><div class="ph-icon" style="background:rgba(34,197,94,.3);"></div><div class="ph-gt"></div><div class="ph-gs"></div></div>
+                <div class="ph-grid-item"><div class="ph-icon" style="background:rgba(249,115,22,.3);"></div><div class="ph-gt"></div><div class="ph-gs"></div></div>
+                <div class="ph-grid-item"><div class="ph-icon" style="background:rgba(239,68,68,.3);"></div><div class="ph-gt"></div><div class="ph-gs"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-phone tall">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="ph-header" style="background:rgba(34,197,94,.12);"><div class="ph-avatar" style="background:var(--teal);"></div><div class="ph-htext"><div class="ph-t1" style="background:rgba(34,197,94,.4);"></div><div class="ph-t2"></div></div></div>
+              <div style="padding:.3rem 0;display:flex;flex-direction:column;gap:.5rem;flex:1;">
+                <div style="background:rgba(29,111,243,.15);border-radius:8px 8px 8px 2px;padding:.5rem;max-width:80%;"><div class="ph-label" style="width:90%;margin-bottom:3px;"></div><div class="ph-label" style="width:70%;"></div></div>
+                <div style="background:rgba(255,255,255,.06);border-radius:8px 8px 2px 8px;padding:.5rem;max-width:80%;align-self:flex-end;"><div class="ph-label" style="width:80%;"></div></div>
+                <div style="background:rgba(29,111,243,.15);border-radius:8px 8px 8px 2px;padding:.5rem;max-width:85%;"><div class="ph-label" style="width:90%;margin-bottom:3px;"></div><div class="ph-label" style="width:80%;margin-bottom:3px;"></div><div class="ph-label" style="width:55%;"></div></div>
+                <div style="background:rgba(255,255,255,.06);border-radius:8px 8px 2px 8px;padding:.5rem;max-width:75%;align-self:flex-end;"><div class="ph-label" style="width:85%;"></div></div>
+              </div>
+              <div style="background:rgba(255,255,255,.06);border-radius:8px;padding:.5rem;display:flex;align-items:center;gap:.4rem;margin-top:auto;"><div style="flex:1;height:5px;background:rgba(255,255,255,.1);border-radius:3px;"></div><div style="width:18px;height:18px;border-radius:50%;background:var(--sky);"></div></div>
+            </div>
+          </div>
+          <div class="demo-phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="ph-header" style="background:rgba(249,115,22,.1);"><div class="ph-avatar" style="background:var(--amber);"></div><div class="ph-htext"><div class="ph-t1" style="background:rgba(249,115,22,.4);"></div><div class="ph-t2"></div></div></div>
+              <div style="display:flex;flex-direction:column;gap:.3rem;flex:1;">
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:#fbbf24;"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div><div class="ph-li-val" style="background:rgba(251,191,36,.2);"></div></div>
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:#94a3b8;"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div><div class="ph-li-val" style="background:rgba(148,163,184,.15);"></div></div>
+                <div class="ph-list-item" style="background:rgba(29,111,243,.08);border-radius:6px;padding:.3rem .4rem;"><div class="ph-li-dot" style="background:var(--sky);"></div><div class="ph-li-t"><div class="ph-lt1" style="background:rgba(29,111,243,.4);"></div><div class="ph-lt2"></div></div><div class="ph-li-val" style="background:rgba(29,111,243,.25);"></div></div>
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:#64748b;"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div><div class="ph-li-val" style="background:rgba(100,116,139,.15);"></div></div>
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:#64748b;"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div><div class="ph-li-val" style="background:rgba(100,116,139,.15);"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEACHER -->
+    <div class="demo-panel" id="panel-teacher">
+      <div class="demo-panel-inner">
+        <div class="demo-info">
+          <h3>Teacher Dashboard</h3>
+          <p>Ms. Fatima creates a quiz using the AI tool, marks attendance with one tap, reviews student performance trends, and sends targeted announcements — all from a single dashboard.</p>
+          <ul class="demo-feats">
+            <li><span class="df-dot"></span>Class management &amp; timetable overview</li>
+            <li><span class="df-dot"></span>Attendance marking with instant records</li>
+            <li><span class="df-dot" style="background:var(--teal)"></span>AI-powered quiz creation &amp; auto-grading</li>
+            <li><span class="df-dot" style="background:var(--teal)"></span>Student performance analytics</li>
+            <li><span class="df-dot" style="background:var(--amber)"></span>Homework assignment &amp; feedback</li>
+            <li><span class="df-dot" style="background:var(--amber)"></span>Announcements &amp; direct messaging</li>
+          </ul>
+          <div style="margin-top:1.5rem;padding:.9rem 1.2rem;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:10px;font-size:.82rem;color:#86efac;">
+            📊 <em>100% of surveyed teachers</em> said the platform must save time and improve teaching efficiency
+          </div>
+        </div>
+        <div class="demo-screens">
+          <div class="demo-phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="ph-header" style="background:rgba(34,197,94,.1);"><div class="ph-avatar" style="background:var(--teal);"></div><div class="ph-htext"><div class="ph-t1" style="background:rgba(34,197,94,.4);"></div><div class="ph-t2"></div></div></div>
+              <div style="display:flex;gap:.3rem;margin:.2rem 0;"><div class="ph-stat" style="flex:1;background:rgba(34,197,94,.12);"><div class="ph-num" style="color:var(--teal);">28</div><div class="ph-sub"></div></div><div class="ph-stat" style="flex:1;"><div class="ph-num">6</div><div class="ph-sub"></div></div></div>
+              <div style="display:flex;flex-direction:column;gap:.3rem;flex:1;">
+                <div class="ph-card"><div style="display:flex;gap:.3rem;margin-bottom:.3rem;"><div style="width:12px;height:12px;border-radius:3px;background:var(--teal);flex-shrink:0;"></div><div style="flex:1;height:4px;background:rgba(255,255,255,.2);border-radius:2px;align-self:center;"></div></div><div class="ph-bar" style="width:85%;background:var(--teal);height:6px;border-radius:3px;"></div></div>
+                <div class="ph-grid"><div class="ph-grid-item"><div class="ph-icon" style="background:rgba(34,197,94,.3);"></div><div class="ph-gt"></div><div class="ph-gs"></div></div><div class="ph-grid-item"><div class="ph-icon" style="background:rgba(29,111,243,.3);"></div><div class="ph-gt"></div><div class="ph-gs"></div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-phone tall">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="ph-header" style="background:rgba(34,197,94,.1);"><div class="ph-avatar" style="background:var(--teal);"></div><div class="ph-htext"><div class="ph-t1" style="background:rgba(34,197,94,.4);"></div><div class="ph-t2"></div></div></div>
+              <div style="display:flex;flex-direction:column;gap:.4rem;flex:1;">
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:var(--teal);"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div><div class="ph-li-val" style="background:rgba(34,197,94,.2);border-radius:4px;"></div></div>
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:var(--teal);"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div><div class="ph-li-val" style="background:rgba(34,197,94,.2);border-radius:4px;"></div></div>
+                <div class="ph-list-item" style="opacity:.5;"><div class="ph-li-dot" style="background:#ef4444;"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div><div class="ph-li-val" style="background:rgba(239,68,68,.2);border-radius:4px;"></div></div>
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:var(--teal);"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div><div class="ph-li-val" style="background:rgba(34,197,94,.2);border-radius:4px;"></div></div>
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:var(--teal);"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div><div class="ph-li-val" style="background:rgba(34,197,94,.2);border-radius:4px;"></div></div>
+              </div>
+              <div style="background:rgba(34,197,94,.15);border-radius:8px;padding:.45rem;text-align:center;"><div style="height:5px;background:rgba(34,197,94,.3);border-radius:3px;width:60%;margin:0 auto;"></div></div>
+            </div>
+          </div>
+          <div class="demo-phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="ph-header" style="background:rgba(249,115,22,.1);"><div class="ph-avatar" style="background:var(--amber);"></div><div class="ph-htext"><div class="ph-t1" style="background:rgba(249,115,22,.4);"></div><div class="ph-t2"></div></div></div>
+              <div style="display:flex;flex-direction:column;gap:.3rem;flex:1;">
+                <div class="ph-card"><div class="ph-bar" style="width:90%;background:var(--sky);height:5px;border-radius:3px;margin-bottom:.3rem;"></div><div class="ph-label" style="width:60%;"></div></div>
+                <div class="ph-card"><div class="ph-bar" style="width:65%;background:var(--amber);height:5px;border-radius:3px;margin-bottom:.3rem;"></div><div class="ph-label" style="width:75%;"></div></div>
+                <div class="ph-card"><div class="ph-bar" style="width:78%;background:var(--teal);height:5px;border-radius:3px;margin-bottom:.3rem;"></div><div class="ph-label" style="width:50%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PARENT -->
+    <div class="demo-panel" id="panel-parent">
+      <div class="demo-panel-inner">
+        <div class="demo-info">
+          <h3>Parent Dashboard</h3>
+          <p>Mrs. Noor checks her child's attendance, reviews the week's grades, reads an announcement from the school, and messages the homeroom teacher — without leaving the app.</p>
+          <ul class="demo-feats">
+            <li><span class="df-dot"></span>Child's attendance record at a glance</li>
+            <li><span class="df-dot"></span>Grade overview and performance trends</li>
+            <li><span class="df-dot" style="background:var(--amber)"></span>Exam schedule and homework deadlines</li>
+            <li><span class="df-dot" style="background:var(--amber)"></span>Direct messaging with teachers</li>
+            <li><span class="df-dot" style="background:var(--teal)"></span>Official school announcements</li>
+            <li><span class="df-dot" style="background:var(--teal)"></span>Multiple children profiles supported</li>
+          </ul>
+          <div style="margin-top:1.5rem;padding:.9rem 1.2rem;background:rgba(249,115,22,.08);border:1px solid rgba(249,115,22,.2);border-radius:10px;font-size:.82rem;color:#fdba74;">
+            🔗 <em>89% of parents</em> want a platform that saves time and connects school and home effectively
+          </div>
+        </div>
+        <div class="demo-screens">
+          <div class="demo-phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="ph-header" style="background:rgba(249,115,22,.1);"><div class="ph-avatar" style="background:var(--amber);"></div><div class="ph-htext"><div class="ph-t1" style="background:rgba(249,115,22,.4);"></div><div class="ph-t2"></div></div></div>
+              <div style="display:flex;gap:.3rem;margin:.2rem 0;"><div class="ph-stat" style="flex:1;background:rgba(34,197,94,.12);"><div class="ph-num" style="color:var(--teal);font-size:.7rem;">92%</div><div class="ph-sub"></div></div><div class="ph-stat" style="flex:1;background:rgba(29,111,243,.12);"><div class="ph-num" style="font-size:.7rem;">B+</div><div class="ph-sub"></div></div></div>
+              <div style="display:flex;flex-direction:column;gap:.3rem;flex:1;">
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:var(--teal);"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div></div>
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:var(--teal);"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div></div>
+                <div class="ph-list-item" style="opacity:.5;"><div class="ph-li-dot" style="background:#ef4444;"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div></div>
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:var(--teal);"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-phone tall">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="ph-header" style="background:rgba(249,115,22,.1);"><div class="ph-avatar" style="background:var(--amber);"></div><div class="ph-htext"><div class="ph-t1" style="background:rgba(249,115,22,.4);"></div><div class="ph-t2"></div></div></div>
+              <div style="display:flex;flex-direction:column;gap:.4rem;flex:1;">
+                <div class="ph-card"><div class="ph-bar" style="width:82%;background:var(--sky);height:6px;border-radius:3px;margin-bottom:.3rem;"></div><div class="ph-label" style="width:55%;"></div></div>
+                <div class="ph-card"><div class="ph-bar" style="width:75%;background:var(--teal);height:6px;border-radius:3px;margin-bottom:.3rem;"></div><div class="ph-label" style="width:70%;"></div></div>
+                <div class="ph-card"><div class="ph-bar" style="width:90%;background:var(--amber);height:6px;border-radius:3px;margin-bottom:.3rem;"></div><div class="ph-label" style="width:60%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADMIN -->
+    <div class="demo-panel" id="panel-admin">
+      <div class="demo-panel-inner">
+        <div class="demo-info">
+          <h3>Admin Control Panel</h3>
+          <p>Mr. Ahmed enrolls new students, assigns teachers to subjects, manages class schedules, and broadcasts a school-wide announcement — all without leaving the admin dashboard.</p>
+          <ul class="demo-feats">
+            <li><span class="df-dot"></span>User management: students, teachers, parents</li>
+            <li><span class="df-dot"></span>Subject and class assignment</li>
+            <li><span class="df-dot" style="background:var(--rose)"></span>Duty and role management</li>
+            <li><span class="df-dot" style="background:var(--rose)"></span>E-library content curation</li>
+            <li><span class="df-dot" style="background:var(--amber)"></span>System-wide announcements</li>
+            <li><span class="df-dot" style="background:var(--amber)"></span>Full platform oversight</li>
+          </ul>
+          <div style="margin-top:1.5rem;padding:.9rem 1.2rem;background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);border-radius:10px;font-size:.82rem;color:#fca5a5;">
+            ⚙️ The admin panel ensures the system runs <em>smoothly and efficiently</em> for the entire institution
+          </div>
+        </div>
+        <div class="demo-screens">
+          <div class="demo-phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="ph-header" style="background:rgba(239,68,68,.1);"><div class="ph-avatar" style="background:var(--rose);"></div><div class="ph-htext"><div class="ph-t1" style="background:rgba(239,68,68,.4);"></div><div class="ph-t2"></div></div></div>
+              <div style="display:flex;gap:.3rem;margin:.2rem 0;"><div class="ph-stat" style="flex:1;"><div class="ph-num" style="font-size:.7rem;">145</div><div class="ph-sub"></div></div><div class="ph-stat" style="flex:1;background:rgba(239,68,68,.1);"><div class="ph-num" style="color:#fca5a5;font-size:.7rem;">12</div><div class="ph-sub"></div></div></div>
+              <div class="ph-grid" style="margin-top:.3rem;">
+                <div class="ph-grid-item"><div class="ph-icon" style="background:rgba(29,111,243,.3);"></div><div class="ph-gt"></div><div class="ph-gs"></div></div>
+                <div class="ph-grid-item"><div class="ph-icon" style="background:rgba(34,197,94,.3);"></div><div class="ph-gt"></div><div class="ph-gs"></div></div>
+                <div class="ph-grid-item"><div class="ph-icon" style="background:rgba(249,115,22,.3);"></div><div class="ph-gt"></div><div class="ph-gs"></div></div>
+                <div class="ph-grid-item"><div class="ph-icon" style="background:rgba(239,68,68,.3);"></div><div class="ph-gt"></div><div class="ph-gs"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-phone tall">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="ph-header" style="background:rgba(239,68,68,.1);"><div class="ph-avatar" style="background:var(--rose);"></div><div class="ph-htext"><div class="ph-t1" style="background:rgba(239,68,68,.4);"></div><div class="ph-t2"></div></div></div>
+              <div style="display:flex;flex-direction:column;gap:.35rem;flex:1;">
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:var(--sky);"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div><div style="width:14px;height:14px;border-radius:3px;background:rgba(29,111,243,.2);flex-shrink:0;"></div></div>
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:var(--teal);"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div><div style="width:14px;height:14px;border-radius:3px;background:rgba(34,197,94,.2);flex-shrink:0;"></div></div>
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:var(--amber);"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div><div style="width:14px;height:14px;border-radius:3px;background:rgba(249,115,22,.2);flex-shrink:0;"></div></div>
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:var(--rose);"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div><div style="width:14px;height:14px;border-radius:3px;background:rgba(239,68,68,.2);flex-shrink:0;"></div></div>
+                <div class="ph-list-item"><div class="ph-li-dot" style="background:var(--sky);"></div><div class="ph-li-t"><div class="ph-lt1"></div><div class="ph-lt2"></div></div><div style="width:14px;height:14px;border-radius:3px;background:rgba(29,111,243,.2);flex-shrink:0;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ SYSTEM PIPELINE ══ -->
+<section id="pipeline" class="section" style="background:#fff;">
+  <div class="wrap">
+    <div class="section-eyebrow reveal">Development Process</div>
+    <h2 class="section-title reveal d1">How We Built It</h2>
+    <p class="section-desc reveal d2">An Agile methodology guided every stage — from survey research to iterative delivery.</p>
+
+    <div class="pipeline-wrap">
+
+      <div class="pipe-step reveal d2">
+        <div class="pipe-left">
+          <div class="pipe-num" style="background:var(--sky);">1</div>
+          <div class="pipe-line"></div>
+        </div>
+        <div class="pipe-body">
+          <h4>Requirements Elicitation — Survey Research</h4>
+          <p>A 145-response survey was distributed across students, teachers, and parents (63% students, 26% parents, 12% teachers) to validate feature priorities. Key findings: 99% of students want fast, reliable performance; 100% of teachers want time-saving tools; 89% of parents want improved school-home communication.</p>
+        </div>
+      </div>
+
+      <div class="pipe-step reveal d3">
+        <div class="pipe-left">
+          <div class="pipe-num" style="background:var(--teal);">2</div>
+          <div class="pipe-line"></div>
+        </div>
+        <div class="pipe-body">
+          <h4>System Modeling — DFD, UML & Personas</h4>
+          <p>Eight Data Flow Diagram levels map every data interaction across the system — from user management and academic scheduling to messaging, quizzes, attendance, and AI features. Use cases and detailed process specifications cover the five primary workflows. Personas for Sara (student), Ms. Fatima (teacher), Mrs. Noor (parent), and Mr. Ahmed (admin) anchor every design decision in real user scenarios.</p>
+        </div>
+      </div>
+
+      <div class="pipe-step reveal d4">
+        <div class="pipe-left">
+          <div class="pipe-num" style="background:var(--amber);">3</div>
+          <div class="pipe-line"></div>
+        </div>
+        <div class="pipe-body">
+          <h4>Iterative Implementation — Agile Sprints</h4>
+          <p>The platform was developed in Agile sprints, with each cycle covering planning, requirements refinement, analysis, coding, testing, and evaluation. The multi-role architecture was broken into independent modules so each role's features could be built and validated in parallel without blocking progress.</p>
+        </div>
+      </div>
+
+      <div class="pipe-step reveal d5">
+        <div class="pipe-left">
+          <div class="pipe-num" style="background:var(--rose);">4</div>
+          <div class="pipe-line"></div>
+        </div>
+        <div class="pipe-body">
+          <h4>Testing, UI Design & Deployment</h4>
+          <p>The UI underwent multiple interface design passes — input screens, output screens, pop-up interfaces, and alert dialogs were each reviewed and refined. Risk mitigation plans covered UI consistency, device compatibility, data integrity, and timeline management. The final platform supports scalability for increasing users, subjects, and features post-deployment.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS ══ -->
+<section id="stats" class="section dark-section">
+  <div class="wrap">
+    <div class="section-eyebrow reveal">Survey Outcomes</div>
+    <h2 class="section-title reveal d1">What the Data Revealed</h2>
+    <p class="section-desc reveal d2">145 survey responses across three user groups shaped every feature decision in Ofoq.</p>
+
+    <div class="stats-grid">
+      <div class="stat-card c-blue reveal d2">
+        <div class="stat-big">95%</div>
+        <div class="stat-label">Students Need Real-Time Notifications</div>
+        <div class="stat-desc">Nearly all student respondents rated timely notifications for deadlines, events, and updates as important to their academic experience.</div>
+      </div>
+      <div class="stat-card c-teal reveal d3">
+        <div class="stat-big">100%</div>
+        <div class="stat-label">Teachers Want a Time-Saving Platform</div>
+        <div class="stat-desc">Every teacher surveyed agreed the platform must reduce administrative workload and improve efficiency — a priority that shaped the entire teacher dashboard.</div>
+      </div>
+      <div class="stat-card c-amber reveal d4">
+        <div class="stat-big">89%</div>
+        <div class="stat-label">Parents Want School-Home Communication</div>
+        <div class="stat-desc">The vast majority of parents want a system that bridges the communication gap between school and family without wasting time.</div>
+      </div>
+    </div>
+
+    <div class="results-table-wrap reveal d2">
+      <table>
+        <thead>
+          <tr>
+            <th>Feature / Requirement</th>
+            <th>User Group</th>
+            <th>Agreement Rate</th>
+            <th>Status in Ofoq</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Easy navigation & user-friendly interface</td>
+            <td>Students, Teachers, Parents</td>
+            <td class="val">≥ 95%</td>
+            <td><span class="tbadge tbadge-g">✓ Implemented</span></td>
+          </tr>
+          <tr>
+            <td>Real-time notifications for deadlines</td>
+            <td>Students</td>
+            <td class="val">95%</td>
+            <td><span class="tbadge tbadge-g">✓ Push Notifications</span></td>
+          </tr>
+          <tr>
+            <td>AI-powered learning tools</td>
+            <td>Students, Teachers</td>
+            <td class="val">Majority agree</td>
+            <td><span class="tbadge tbadge-g">✓ AI Chat + Quizzes</span></td>
+          </tr>
+          <tr>
+            <td>Attendance visibility for parents</td>
+            <td>Parents</td>
+            <td class="val">Strong agreement</td>
+            <td><span class="tbadge tbadge-g">✓ Parent Dashboard</span></td>
+          </tr>
+          <tr>
+            <td>Time-saving, efficient tools</td>
+            <td>Teachers</td>
+            <td class="val">100%</td>
+            <td><span class="tbadge tbadge-g">✓ Auto Grading</span></td>
+          </tr>
+          <tr>
+            <td>Data privacy and security</td>
+            <td>Parents</td>
+            <td class="val">High priority</td>
+            <td><span class="tbadge tbadge-b">⚙ Non-Functional Req.</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TECH STACK ══ -->
+<section id="tech" class="section">
+  <div class="wrap">
+    <div class="section-eyebrow reveal">Technology</div>
+    <h2 class="section-title reveal d1">Built With Modern Tools</h2>
+    <p class="section-desc reveal d2">Ofoq is designed for performance, portability, and scalability across devices and platforms.</p>
+
+    <div class="tech-grid">
+      <div class="tech-card reveal d2">
+        <span class="tech-icon">📱</span>
+        <div class="tech-name">Cross-Platform Mobile</div>
+        <div class="tech-cat">Frontend · Portability</div>
+      </div>
+      <div class="tech-card reveal d3">
+        <span class="tech-icon">🤖</span>
+        <div class="tech-name">AI Chat & Quiz Engine</div>
+        <div class="tech-cat">Machine Learning · NLP</div>
+      </div>
+      <div class="tech-card reveal d4">
+        <span class="tech-icon">🔔</span>
+        <div class="tech-name">Push Notification System</div>
+        <div class="tech-cat">Real-Time · Firebase</div>
+      </div>
+      <div class="tech-card reveal d5">
+        <span class="tech-icon">🔒</span>
+        <div class="tech-name">Role-Based Auth & Security</div>
+        <div class="tech-cat">Backend · Data Protection</div>
+      </div>
+      <div class="tech-card reveal d2">
+        <span class="tech-icon">📊</span>
+        <div class="tech-name">Analytics & Reporting</div>
+        <div class="tech-cat">Performance Tracking</div>
+      </div>
+      <div class="tech-card reveal d3">
+        <span class="tech-icon">📚</span>
+        <div class="tech-name">Digital E-Library</div>
+        <div class="tech-cat">File Management · Storage</div>
+      </div>
+      <div class="tech-card reveal d4">
+        <span class="tech-icon">🎮</span>
+        <div class="tech-name">Gamification Engine</div>
+        <div class="tech-cat">Points · Leaderboards · Games</div>
+      </div>
+      <div class="tech-card reveal d5">
+        <span class="tech-icon">☁️</span>
+        <div class="tech-name">Cloud Infrastructure</div>
+        <div class="tech-cat">Scalability · 24/7 Availability</div>
+      </div>
+    </div>
+
+    <!-- Marquee strip -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span class="marquee-item">🎓 STUDENT PORTAL</span>
+        <span class="marquee-item">👨‍🏫 TEACHER TOOLS</span>
+        <span class="marquee-item">👪 PARENT VISIBILITY</span>
+        <span class="marquee-item">⚙️ ADMIN CONTROL</span>
+        <span class="marquee-item">🤖 AI TUTORING</span>
+        <span class="marquee-item">📖 E-LIBRARY</span>
+        <span class="marquee-item">🎮 GAMIFICATION</span>
+        <span class="marquee-item">🔔 NOTIFICATIONS</span>
+        <span class="marquee-item">📊 ANALYTICS</span>
+        <span class="marquee-item">🌍 SDG 4</span>
+        <!-- duplicate for infinite scroll -->
+        <span class="marquee-item">🎓 STUDENT PORTAL</span>
+        <span class="marquee-item">👨‍🏫 TEACHER TOOLS</span>
+        <span class="marquee-item">👪 PARENT VISIBILITY</span>
+        <span class="marquee-item">⚙️ ADMIN CONTROL</span>
+        <span class="marquee-item">🤖 AI TUTORING</span>
+        <span class="marquee-item">📖 E-LIBRARY</span>
+        <span class="marquee-item">🎮 GAMIFICATION</span>
+        <span class="marquee-item">🔔 NOTIFICATIONS</span>
+        <span class="marquee-item">📊 ANALYTICS</span>
+        <span class="marquee-item">🌍 SDG 4</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact" class="section" style="background:#fff;">
+  <div class="wrap">
+    <div class="section-eyebrow reveal">Contact</div>
+    <h2 class="section-title reveal d1">Get In Touch</h2>
+    <p class="section-desc reveal d2">Have questions about Ofoq or want to learn more about our research and methodology? Reach out.</p>
+
+    <div class="contact-grid">
+      <div class="reveal-left d2">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="ci-item">
+            <div class="ci-icon">✉️</div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-val"><a href="mailto:info@ofoq.bh">info@ofoq.bh</a></div>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-label">Location</div>
+              <div class="ci-val">Manama, Kingdom of Bahrain</div>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">🎓</div>
+            <div>
+              <div class="ci-label">Institution</div>
+              <div class="ci-val">University of Bahrain · ITCS 498</div>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">📅</div>
+            <div>
+              <div class="ci-label">Academic Year</div>
+              <div class="ci-val">2025–2026, Semester 2</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-wrap reveal-right d2">
+        <h3>Send a Message</h3>
+        <p>We'll get back to you as soon as possible.</p>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="fgroup">
+              <label>Full Name</label>
+              <input type="text" placeholder="Your name" required/>
+            </div>
+            <div class="fgroup">
+              <label>Email Address</label>
+              <input type="email" placeholder="your@email.com" required/>
+            </div>
+          </div>
+          <div class="fgroup">
+            <label>Organization</label>
+            <input type="text" placeholder="School / University / Company"/>
+          </div>
+          <div class="fgroup">
+            <label>Message</label>
+            <textarea placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="submitBtn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">⚡ Ofoq</div>
+        <p class="footer-about">An integrated smart school platform connecting students, teachers, parents, and administrators — developed as a Senior Capstone Project at the University of Bahrain.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#problem">Vision</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#stats">Results</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Features</h4>
+        <ul>
+          <li><a href="#features">Student Portal</a></li>
+          <li><a href="#features">Teacher Tools</a></li>
+          <li><a href="#features">Parent Access</a></li>
+          <li><a href="#features">Admin Control</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Project</h4>
+        <ul>
+          <li><a href="#">University of Bahrain</a></li>
+          <li><a href="#">ITCS 498 Senior Project</a></li>
+          <li><a href="#">Aligned with SDG 4</a></li>
+          <li><a href="mailto:info@ofoq.bh">Contact Team</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ofoq Project. All rights reserved.</span>
+      <span>Senior Project · ITCS 498 · University of Bahrain</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
